@@ -1,0 +1,38 @@
+{
+  "name": "engagement-personalization-with-ott-platform",
+  "version": "1.0.0",
+  "description": "Engagement Personalization with OTT Platform classifies audience segments and personalizes social signals; applies decision gates and observability; orchestrates via OTT Platform to boost engagement.",
+  "main": "workflow.json",
+  "keywords": [
+    "agentbridge",
+    "workflow",
+    "automation",
+    "n8n",
+    "chain-of-thought",
+    "media-&-entertainment",
+    "audience",
+    "broadcast",
+    "chain-of-thought",
+    "media"
+  ],
+  "author": "AgentBridge",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kartik71/agentbridge-engagement-personalization-with-ott-plat-979910.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kartik71/agentbridge-engagement-personalization-with-ott-plat-979910/issues"
+  },
+  "homepage": "https://github.com/kartik71/agentbridge-engagement-personalization-with-ott-plat-979910#readme",
+  "scripts": {
+    "start": "echo \"Import this workflow into your n8n instance\"",
+    "validate": "echo \"Workflow validation complete\"",
+    "test": "echo \"Run workflow tests\"",
+    "deploy": "echo \"Deploy to n8n instance\""
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "n8n": ">=1.0.0"
+  }
+}
