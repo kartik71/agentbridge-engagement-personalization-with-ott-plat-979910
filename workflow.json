@@ -1,0 +1,243 @@
+{
+  "id": "published-wf-template-tpl-1693184764-3",
+  "name": "Engagement Personalization with OTT Platform",
+  "description": "Engagement Personalization with OTT Platform classifies audience segments and personalizes social signals; applies decision gates and observability; orchestrates via OTT Platform to boost engagement.",
+  "industry": "Media & Entertainment",
+  "pattern": "Chain-of-Thought",
+  "complexity": "Intermediate",
+  "tags": [
+    "audience",
+    "broadcast",
+    "chain-of-thought",
+    "media"
+  ],
+  "steps": [
+    {
+      "id": "intake",
+      "name": "Asset Intake",
+      "description": "Collect, validate and normalize social signals from CMS; attach a runId and timestamp for traceability."
+    },
+    {
+      "id": "reason-0",
+      "name": "Reason",
+      "description": "Execute reason phase for the Chain-of-Thought pattern: persist interim state, enforce guardrails, and emit structured JSON results."
+    },
+    {
+      "id": "decide-1",
+      "name": "Decide",
+      "description": "Execute decide phase for the Chain-of-Thought pattern: persist interim state, enforce guardrails, and emit structured JSON results."
+    },
+    {
+      "id": "creative-selection-0",
+      "name": "Creative Selection",
+      "description": "Creative Selection across joined datasets; branch on thresholds using decision gates; write metrics (success/error counts) for observability."
+    },
+    {
+      "id": "recommendation-1",
+      "name": "Recommendation",
+      "description": "Recommendation across joined datasets; branch on thresholds using decision gates; write metrics (success/error counts) for observability."
+    },
+    {
+      "id": "schedule-optimization-2",
+      "name": "Schedule Optimization",
+      "description": "Schedule Optimization across joined datasets; branch on thresholds using decision gates; write metrics (success/error counts) for observability."
+    },
+    {
+      "id": "audience-targeting-3",
+      "name": "Audience Targeting",
+      "description": "Audience Targeting across joined datasets; branch on thresholds using decision gates; write metrics (success/error counts) for observability."
+    },
+    {
+      "id": "rights-validation-4",
+      "name": "Rights Validation",
+      "description": "Rights Validation across joined datasets; branch on thresholds using decision gates; write metrics (success/error counts) for observability."
+    },
+    {
+      "id": "content-classification-5",
+      "name": "Content Classification",
+      "description": "Content Classification across joined datasets; branch on thresholds using decision gates; write metrics (success/error counts) for observability."
+    },
+    {
+      "id": "finalize",
+      "name": "Delivery Package",
+      "description": "Assemble final payload with status, artifacts, KPIs and audit trail; store to Transcoder; return response JSON for the client."
+    }
+  ],
+  "nodes": [
+    {
+      "id": "intake",
+      "type": "agentbridge",
+      "data": {
+        "label": "Asset Intake",
+        "description": "Collect, validate and normalize social signals from CMS; attach a runId and timestamp for traceability.",
+        "nodeType": "input",
+        "category": "ai-models",
+        "executionMode": "autonomous"
+      },
+      "position": {
+        "x": 0,
+        "y": 100
+      }
+    },
+    {
+      "id": "reason-0",
+      "type": "agentbridge",
+      "data": {
+        "label": "Reason",
+        "description": "Execute reason phase for the Chain-of-Thought pattern: persist interim state, enforce guardrails, and emit structured JSON results.",
+        "nodeType": "llm",
+        "category": "ai-models",
+        "executionMode": "autonomous"
+      },
+      "position": {
+        "x": 300,
+        "y": 100
+      }
+    },
+    {
+      "id": "decide-1",
+      "type": "agentbridge",
+      "data": {
+        "label": "Decide",
+        "description": "Execute decide phase for the Chain-of-Thought pattern: persist interim state, enforce guardrails, and emit structured JSON results.",
+        "nodeType": "llm",
+        "category": "ai-models",
+        "executionMode": "autonomous"
+      },
+      "position": {
+        "x": 600,
+        "y": 100
+      }
+    },
+    {
+      "id": "creative-selection-0",
+      "type": "agentbridge",
+      "data": {
+        "label": "Creative Selection",
+        "description": "Creative Selection across joined datasets; branch on thresholds using decision gates; write metrics (success/error counts) for observability.",
+        "nodeType": "llm",
+        "category": "ai-models",
+        "executionMode": "autonomous"
+      },
+      "position": {
+        "x": 900,
+        "y": 100
+      }
+    },
+    {
+      "id": "recommendation-1",
+      "type": "agentbridge",
+      "data": {
+        "label": "Recommendation",
+        "description": "Recommendation across joined datasets; branch on thresholds using decision gates; write metrics (success/error counts) for observability.",
+        "nodeType": "llm",
+        "category": "ai-models",
+        "executionMode": "autonomous"
+      },
+      "position": {
+        "x": 1200,
+        "y": 100
+      }
+    },
+    {
+      "id": "schedule-optimization-2",
+      "type": "agentbridge",
+      "data": {
+        "label": "Schedule Optimization",
+        "description": "Schedule Optimization across joined datasets; branch on thresholds using decision gates; write metrics (success/error counts) for observability.",
+        "nodeType": "llm",
+        "category": "ai-models",
+        "executionMode": "autonomous"
+      },
+      "position": {
+        "x": 1500,
+        "y": 100
+      }
+    },
+    {
+      "id": "audience-targeting-3",
+      "type": "agentbridge",
+      "data": {
+        "label": "Audience Targeting",
+        "description": "Audience Targeting across joined datasets; branch on thresholds using decision gates; write metrics (success/error counts) for observability.",
+        "nodeType": "llm",
+        "category": "ai-models",
+        "executionMode": "autonomous"
+      },
+      "position": {
+        "x": 1800,
+        "y": 100
+      }
+    },
+    {
+      "id": "rights-validation-4",
+      "type": "agentbridge",
+      "data": {
+        "label": "Rights Validation",
+        "description": "Rights Validation across joined datasets; branch on thresholds using decision gates; write metrics (success/error counts) for observability.",
+        "nodeType": "llm",
+        "category": "ai-models",
+        "executionMode": "autonomous"
+      },
+      "position": {
+        "x": 2100,
+        "y": 100
+      }
+    },
+    {
+      "id": "content-classification-5",
+      "type": "agentbridge",
+      "data": {
+        "label": "Content Classification",
+        "description": "Content Classification across joined datasets; branch on thresholds using decision gates; write metrics (success/error counts) for observability.",
+        "nodeType": "llm",
+        "category": "ai-models",
+        "executionMode": "autonomous"
+      },
+      "position": {
+        "x": 2400,
+        "y": 100
+      }
+    },
+    {
+      "id": "finalize",
+      "type": "agentbridge",
+      "data": {
+        "label": "Delivery Package",
+        "description": "Assemble final payload with status, artifacts, KPIs and audit trail; store to Transcoder; return response JSON for the client.",
+        "nodeType": "output",
+        "category": "ai-models",
+        "executionMode": "autonomous"
+      },
+      "position": {
+        "x": 2700,
+        "y": 100
+      }
+    }
+  ],
+  "publishedAt": "2026-04-06T22:13:11.071Z",
+  "destination": "launchpad",
+  "deployments": 16,
+  "lastDeployed": "2026-04-06T22:13:11.071Z",
+  "configuration": {
+    "provider": "azure",
+    "region": "eastus",
+    "compute": "cpu-optimized"
+  },
+  "healthStatus": "healthy",
+  "deploymentCount": 3,
+  "githubRepo": "https://github.com/agentbridge/engagement-personalization-with-ott-platform",
+  "maintainer": "You",
+  "downloads": 205,
+  "rating": 4.818932689073418,
+  "createdAt": "2026-04-06T22:13:11.071Z",
+  "updatedAt": "2026-04-06T22:13:11.071Z",
+  "isPublished": true,
+  "isFeatured": false,
+  "deploymentMetadata": {
+    "publishedBy": "You",
+    "publishedAt": "2026-04-06T22:13:11.071Z",
+    "source": "Template Selection",
+    "version": "1.0.0"
+  }
+}
